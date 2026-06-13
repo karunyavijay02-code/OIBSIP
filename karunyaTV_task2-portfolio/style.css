@@ -274,3 +274,132 @@ width:250px;
 height:320px;
 }
 }
+/* Floating Profile Image */
+
+.hero-image img{
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-15px);
+}
+100%{
+transform:translateY(0);
+}
+}
+
+/* Animated Background */
+
+body{
+background:linear-gradient(
+135deg,
+#0f172a,
+#1e1b4b,
+#111827,
+#312e81
+);
+
+background-size:400% 400%;
+animation:bgmove 12s ease infinite;
+}
+
+@keyframes bgmove{
+0%{
+background-position:0% 50%;
+}
+50%{
+background-position:100% 50%;
+}
+100%{
+background-position:0% 50%;
+}
+}
+
+/* Glowing Name */
+
+.hero-text span{
+color:#a855f7;
+
+text-shadow:
+0 0 10px #a855f7,
+0 0 20px #a855f7,
+0 0 40px #a855f7;
+}
+
+/* Contact Links */
+
+.contact-card a{
+color:#c084fc;
+text-decoration:none;
+font-weight:600;
+}
+
+.contact-card a:hover{
+color:white;
+text-decoration:underline;
+}
+
+/* Better Project Hover */
+
+.project-card:hover{
+transform:
+translateY(-10px)
+scale(1.03);
+
+box-shadow:
+0 0 25px #a855f7;
+}
+
+/* Better Skill Hover */
+
+.skill-card:hover{
+transform:
+translateY(-10px)
+scale(1.05);
+
+box-shadow:
+0 0 25px #a855f7;
+}
+
+/* Fade-in Animation */
+
+section{
+animation:fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Button Glow */
+
+.btn:hover{
+transform:
+translateY(-3px)
+scale(1.05);
+
+box-shadow:
+0 0 20px #a855f7;
+}
+
+/* Statistics Hover */
+
+.stat-card{
+transition:0.4s;
+}
+
+.stat-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px #a855f7;
+}
