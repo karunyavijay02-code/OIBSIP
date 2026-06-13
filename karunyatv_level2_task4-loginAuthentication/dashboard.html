@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <h1>🎉 Welcome to Your Dashboard</h1>
+
+    <h2 id="welcomeUser"></h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>👤 Profile</h3>
+            <p>Registered User</p>
+        </div>
+
+        <div class="card">
+            <h3>💻 Skills</h3>
+            <p>HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Goal</h3>
+            <p>Become a Full Stack Developer</p>
+        </div>
+
+    </div>
+
+    <div class="info-box">
+
+        <h3>About This Project</h3>
+
+        <p>
+            This Login Authentication System was developed using
+            HTML, CSS and JavaScript. It allows users to register,
+            login, access a protected dashboard and logout securely.
+        </p>
+
+    </div>
+
+    <div class="quote-box">
+
+        <h3>💡 Daily Motivation</h3>
+
+        <p>
+            "Success doesn't come from what you do occasionally.
+            It comes from what you do consistently."
+        </p>
+
+    </div>
+
+    <button onclick="logout()">
+        Logout
+    </button>
+
+</div>
+
+<script>
+
+if(localStorage.getItem("loggedIn") !== "true"){
+window.location.href="index.html";
+}
+
+document.getElementById("welcomeUser").innerText =
+"Hello, " + localStorage.getItem("username") + " 👋";
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
